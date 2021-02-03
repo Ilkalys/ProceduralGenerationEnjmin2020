@@ -21,7 +21,6 @@ public class WFC : MonoBehaviour
         
         do
         {
-            print("here");
             List<Vector3Int> LE = FindLowestEntropy();
             Vector3Int randPos = LE[Random.Range(0, LE.Count)];
 
@@ -32,7 +31,7 @@ public class WFC : MonoBehaviour
             newListAtRandPos.Add(listAtRandPos[randomPrototype]);
 
             field[randPos.x, randPos.y, randPos.z] = newListAtRandPos;
-            Instantiate(field[randPos.x, randPos.y, randPos.z][0], new Vector3(randPos.x * sizeTile, randPos.y * sizeTile, randPos.z * sizeTile), this.transform.rotation);
+            Instantiate(field[randPos.x, randPos.y, randPos.z][0], new Vector3(randPos.x * sizeTile, randPos.y * sizeTile, randPos.z * sizeTile), field[randPos.x, randPos.y, randPos.z][0].transform.rotation);
 
             Propagation(randPos);
         }
