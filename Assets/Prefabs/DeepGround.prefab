@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8397698630042992414}
   - component: {fileID: 5931921527604085030}
   m_Layer: 0
-  m_Name: Mur
+  m_Name: DeepGround
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -60,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a6132e7c3fb7b7044acc08e65a5f2b0a, type: 2}
+  - {fileID: 2100000, guid: 70d48615dc427c5428268fc76bd76aac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
