@@ -35,11 +35,7 @@ public class WFC : MonoBehaviour
 
             Propagation(randPos);
         }
-        while (!AllAtOne());
-        
-
-
-        
+        while (!AllAtOne());           
 
     }
 
